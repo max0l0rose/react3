@@ -13,8 +13,8 @@ export function Alert(props) {
     console.log('alert out')
 
     return(
-        <div className={'alert alert-danger m-3 p-3 shadow'}>
-            Alert!!!!!!!!!!!!!
+        <div className={'alert alert-danger m-3 p-3 shadow'} onClick={e=>{context.alertToggle()}}>
+            {context.text}
         </div>
     )
 }
